@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome link  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <!-- bootswatch -->
+    <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+    <title>Book Keep</title>
+    <style>
+        *{
+            cursor: url("https://pngimg.com/uploads/cursor/cursor_PNG97.png"), auto;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(244, 255, 226);">
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">Book <span>Keep</span></h1>
+
+        <!-- book submission form  -->
+        <form id="book-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input placeholder="Enter Book Title..." autocomplete="off" type="text" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input placeholder="Enter Author Name..." autocomplete="off" type="text" id="author" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN</label>
+                <input placeholder="Enter isbn..." autocomplete="off" type="text" id="isbn" class="form-control">
+            </div>
+            <input type="submit" value="Add Book" class="btn btn-primary mt-2">
+        </form>
+
+        <!-- book store table  -->
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+<footer class="text-center mt-5">
+    <small>Built with ♥ by <a href="https://github.com/minku-singh">Minku</a></small>
+</footer>
+</html>
